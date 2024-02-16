@@ -17,15 +17,14 @@ Before you begin, ensure that you have the following tools installed:
    npx create-astro my-react-astro-app --template astro-react
 1. Navigate to the project directory:
 
-bash
-Copy code
-cd my-react-astro-app
+   ```bash
+   Copy code
+   cd my-react-astro-app
 
 2. Install project dependencies:
 
-bash
-Copy code
-npm install
+   ```bash
+   npm install
 
 ## Start the Development Server
 Run the following command to start the development server:
@@ -37,8 +36,9 @@ npm run dev
 Additional Configuration (if needed)
 If you encounter any issues or want to customize your setup, you may need to modify the astro.config.mjs file in the project root. Ensure that the jsx property is set to 'react'.
 
-export default {
-  // ...other configurations...
-  jsx: 'react',
-};
+   ```bash
+   export default {
+     // ...other configurations...
+     jsx: 'react',
+   };
 
