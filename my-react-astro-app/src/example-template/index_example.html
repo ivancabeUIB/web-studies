@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IDEL - Participa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .w3-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    #main-nav-bar{
+      display: flex;
+      align-items: center;
+      height: 50%;
+      margin-top: 15px;
+    }
+
+    .language-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 80px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      right: 0;
+    }
+
+    .language-dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .language-dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .language-dropdown:hover .language-dropdown-content {
+      display: block;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    .estudy-card-content {
+      margin-top: 30px;
+      text-align: justify;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-display-container w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index_example.html"><img src="IDEL-header-img.png" width="400" height="75"/></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div id="#main-nav-bar" class="language-dropdown w3-right w3-hide-small">
+      <img src="lang_ES.png" width="25" height="20" alt="Spanish">
+      <div class="language-dropdown-content">
+        <a href="#es"><img src="lang_ES.png" width="25" height="20" alt="Spanish"> ES</a>
+        <a href="#cat"><img src="lang_CAT.png" width="25" height="20" alt="Catalan"> CAT</a>
+        <a href="#en"><img src="lang_EN.png" width="25" height="20" alt="English"> EN</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px; margin-top: 40px;">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-64" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Proyectos</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l6 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="study_template.html"><p>Estudio sobre exclusión social</p></a></div>
+        <br>
+        <div>
+            <p class="estudy-card-content" style="margin-top: 50px;">
+              El grupo de investigación en Desarrollo, Educación y Lenguaje I+DEL de la Universitat de les Illes Balears (http://idel.uib.es/), 
+              estamos llevando a cabo una investigación acerca de variables relacionadas con diferentes situaciones y experiencias durante tu etapa escolar. 
+              Este estudio consta de dos partes. La primera parte está formada por un apartado de datos sociodemográficos y 3 cuestionarios 
+              (acoso escolar retrospectivo, estado de ánimo actual y estrategias de afrontamiento o regulación emocional). 
+              La segunda parte es una tarea sobre imágenes de exclusión social, en la que deberás valorar tres aspectos sobre una serie de imágenes. 
+              Para cada parte te explicaremos con detalle cada una de las tareas que llevarás a cabo. Para hacer la segunda tarea deberás hacer 'clic' sobre un enlace que te proporcionaremos al final de los cuestionarios.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l6 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="study_template.html"><p>Prueba Cervantes y lenguaje autorreportado</p></a></div>
+        <br>
+        <div>
+            <p class="estudy-card-content" style="margin-top: 50px;">
+              El grupo de investigación en Desarrollo, Educación y Lenguaje I+DEL de la Universitat de les Illes Balears (http://idel.uib.es/), 
+              junto con el Instituto Cervantes, está realizando un estudio de la prueba de nivel de lengua castellana AVE del Instituto Cervantes, 
+              con el fin de validarla. Por ello, estamos buscando personas adultas que quieran responder a un cuestionario en línea. 
+              El cuestionario se puede completar en unos 10-20 minutos, las respuestas son totalmente confidenciales y 
+              únicamente serán utilizadas con fines de investigación. Al finalizar el estudio se realizará un sorteo de 5 premios 
+              de 100 euros entre todas aquellas personas que hayan respondido completamente al cuestionario en línea.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sobre nosotros</h3>
+    <p>
+      Aquí puedes registrarte para participar en los experimentos del Laboratorio de Investigación en Desarrollo, Educación y Lenguaje (I+DELab). Nuestro laboratorio está en el campus de la UIB, en el edificio Guillem Cifre, pero también llevamos a cabo muchos estudios online.
+      En esta sección de la web aparecerán los estudios disponibles y solo tendrás que hacer clic para participar.
+      ¡Gracias por contribuir al progreso de la ciencia y la educación con nuestro grupo!
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="img_guy_placeholder.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="img_guy_placeholder.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="img_guy_placeholder.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="img_guy_placeholder.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contacto</h3>
+    <p>Ponte en contacto con nosotros sobre cualquier problema.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Asunto" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comentario" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> Enviar
+      </button>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+</footer>
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdownLinks = document.querySelectorAll('.language-dropdown-content a');
+  const mainImage = document.querySelector('.language-dropdown img');
+  const langDropdown = document.getElementById('lang-dropdown');
+
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const selectedImageSrc = this.querySelector('img').getAttribute('src');
+      mainImage.setAttribute('src', selectedImageSrc);
+      hideDropdown(); // Llamar a la función para ocultar el menú desplegable
+    });
+  });
+
+  function hideDropdown() {
+    // Asegurarse de que langDropdown no sea null antes de intentar ocultarlo
+    if (langDropdown) {
+      langDropdown.style.display = 'none';
+    }
+  }
+
+  // Mostrar el menú desplegable al hacer hover
+  document.getElementById('main-nav-bar').addEventListener('mouseover', function () {
+    if (langDropdown) {
+      langDropdown.style.display = 'block';
+    }
+  });
+
+  // Ocultar el menú desplegable al quitar el mouse
+  document.getElementById('main-nav-bar').addEventListener('mouseout', function () {
+    if (langDropdown) {
+      langDropdown.style.display = 'none';
+    }
+  });
+});
+
+</script>
+</body>
+</html>
