@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import lang_ES from '../images/lang-img/lang_ES.png';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+<style>
+    a {
+        color: black;
+        text-decoration: none;
+    }
+</style>
+<div class="border p-3">
+    <div>
+        <a href="">
+        <div>
+            <div>
+            <p><b>Estudio sobre exclusión social</b></p>
+            </div>
+            <br>
+            <div>
+            <Image src="/" width="200px" height="200px" alt="placeholder" />
+            </div>
+        </div>
+        </a>
+    </div>
+    <div>
+        <a href="">
+        <div>
+            <div>
+            <p><b>Prueba Cervantes y lenguaje autorreportado</b></p>
+            </div>
+            <br>
+            <div>
+            <p>
+                El grupo de investigación en Desarrollo, Educación y Lenguaje I+DEL de la Universitat de les Illes Balears (http://idel.uib.es/), 
+                junto con el Instituto Cervantes, está realizando un estudio de la prueba de nivel de lengua castellana AVE del Instituto Cervantes, 
+                con el fin de validarla. Por ello, estamos buscando personas adultas que quieran responder a un cuestionario en línea. 
+                El cuestionario se puede completar en unos 10-20 minutos, las respuestas son totalmente confidenciales y 
+                únicamente serán utilizadas con fines de investigación. Al finalizar el estudio se realizará un sorteo de 5 premios 
+                de 100 euros entre todas aquellas personas que hayan respondido completamente al cuestionario en línea.
+            </p>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>

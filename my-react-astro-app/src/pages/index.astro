@@ -13,13 +13,12 @@ import header_IDEL from '../images/headers-img/IDEL-header-img.png';
 ---
 <Layout title="IDEL">
 <!-- Navbar (sit on top) -->
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-11 col-md-11 col-sm-10 justify-content-start">
       <a href="/"><Image src={header_IDEL} alt="header_IDEL" width="300" height="65"/></a>
     </div>
     <div class="col-1 col-md-1 col-sm-2 justify-content-center mt-3">
-      <!-- Float links to the right. Hide them on small screens -->
       <div id="main-nav-bar" class="justify-content-center mr-sm-3">
         <Image src={lang_ES} width="25" height="20" alt="Spanish">
           <div>
@@ -37,41 +36,7 @@ import header_IDEL from '../images/headers-img/IDEL-header-img.png';
   <div id="projects">
     <h3>Proyectos</h3>
   </div>
-  <div>
-    <div>
-      <a href="">
-        <div>
-          <div>
-            <p><b>Estudio sobre exclusión social</b></p>
-          </div>
-          <br>
-          <div>
-            <img src="" width="200px" height="200px" />
-          </div>
-        </div>
-      </a>
-    </div>
-    <div>
-      <a href="">
-        <div>
-          <div>
-            <p><b>Prueba Cervantes y lenguaje autorreportado</b></p>
-          </div>
-          <br>
-          <div>
-            <p>
-              El grupo de investigación en Desarrollo, Educación y Lenguaje I+DEL de la Universitat de les Illes Balears (http://idel.uib.es/), 
-              junto con el Instituto Cervantes, está realizando un estudio de la prueba de nivel de lengua castellana AVE del Instituto Cervantes, 
-              con el fin de validarla. Por ello, estamos buscando personas adultas que quieran responder a un cuestionario en línea. 
-              El cuestionario se puede completar en unos 10-20 minutos, las respuestas son totalmente confidenciales y 
-              únicamente serán utilizadas con fines de investigación. Al finalizar el estudio se realizará un sorteo de 5 premios 
-              de 100 euros entre todas aquellas personas que hayan respondido completamente al cuestionario en línea.
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
+  <Card></Card>
   <!-- About Section -->
   <div>
     <h3>Sobre nosotros</h3>
@@ -86,7 +51,7 @@ import header_IDEL from '../images/headers-img/IDEL-header-img.png';
 <!-- Footer -->
 <footer class="container-fluid bg-light">
   <!-- Contact Section -->
-  <div class="container row h-100">
+  <div class="container row">
     <div id="contact" class="col-10 d-flex flex-column justify-content-center">
       <h3>Contacto</h3>
       <p>Ponte en contacto con nosotros sobre cualquier problema.</p>
