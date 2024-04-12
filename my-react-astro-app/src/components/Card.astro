@@ -1,12 +1,20 @@
 ---
 import { Image } from 'astro:assets';
-import lang_ES from '../images/lang-img/lang_ES.png';
+import { Debug } from 'astro:components';
+
 
 interface Props {
-	title: string;
+	img: string;
+    alt: string;
+    card_title: string;
+    url: string;
 }
 
-const { title } = Astro.props;
+const { img, alt } = Astro.props;
+const { card_title } = Astro.props;
+const { url } = Astro.props;
+
+import card_img_placeholder from '../images/cards-img/gato-placeholder.jpg';
 ---
 <style>
     a {
@@ -14,38 +22,22 @@ const { title } = Astro.props;
         text-decoration: none;
     }
 </style>
-<div class="border p-3">
+<div class="card border p-3 mt-2 mb-2" style="background-color: #f2f2f2;">
     <div>
-        <a href="">
-        <div>
+        <a href={url}>
             <div>
-            <p><b>Estudio sobre exclusión social</b></p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="mb-0"><b>{ card_title }</b></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="text-center">
+                    <Image src={card_img_placeholder} alt={alt} class="img-fluid" style="max-width: 100%;">
+                </div>
             </div>
-            <br>
-            <div>
-            <Image src="/" width="200px" height="200px" alt="placeholder" />
-            </div>
-        </div>
-        </a>
-    </div>
-    <div>
-        <a href="">
-        <div>
-            <div>
-            <p><b>Prueba Cervantes y lenguaje autorreportado</b></p>
-            </div>
-            <br>
-            <div>
-            <p>
-                El grupo de investigación en Desarrollo, Educación y Lenguaje I+DEL de la Universitat de les Illes Balears (http://idel.uib.es/), 
-                junto con el Instituto Cervantes, está realizando un estudio de la prueba de nivel de lengua castellana AVE del Instituto Cervantes, 
-                con el fin de validarla. Por ello, estamos buscando personas adultas que quieran responder a un cuestionario en línea. 
-                El cuestionario se puede completar en unos 10-20 minutos, las respuestas son totalmente confidenciales y 
-                únicamente serán utilizadas con fines de investigación. Al finalizar el estudio se realizará un sorteo de 5 premios 
-                de 100 euros entre todas aquellas personas que hayan respondido completamente al cuestionario en línea.
-            </p>
-            </div>
-        </div>
         </a>
     </div>
 </div>

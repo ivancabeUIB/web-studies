@@ -5,38 +5,32 @@ import Footer from '../components/Footer.astro';
 import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 
-import { Image } from 'astro:assets';
-import lang_ES from '../images/lang-img/lang_ES.png';
-import lang_CAT from '../images/lang-img/lang_CAT.png';
-import lang_EN from '../images/lang-img/lang_EN.png';
-import header_IDEL from '../images/headers-img/IDEL-header-img.png';
+
+const Cards_dynamic_content = [
+  { 
+    alt: "gato-placeholder",
+    card_title: "Estudio sobre exclusión social",
+    url: "/caca2",
+  },
+  {
+    alt: "img-placeholder",
+    card_title: "Prueba Cervantes y lenguaje autorreportado",
+    url: "/caca",
+  },
+]
 ---
 <Layout title="IDEL">
-<!-- Navbar (sit on top) -->
-<div class="container">
-  <div class="row">
-    <div class="col-11 col-md-11 col-sm-10 justify-content-start">
-      <a href="/"><Image src={header_IDEL} alt="header_IDEL" width="300" height="65"/></a>
-    </div>
-    <div class="col-1 col-md-1 col-sm-2 justify-content-center mt-3">
-      <div id="main-nav-bar" class="justify-content-center mr-sm-3">
-        <Image src={lang_ES} width="25" height="20" alt="Spanish">
-          <div>
-            <a href="#es"><Image src={lang_ES} width="25" height="20" alt="Spanish"> ES</a>
-            <a href="#cat"><Image src={lang_CAT} width="25" height="20" alt="Catalan"> CAT</a>
-            <a href="#en"><Image src={lang_EN} width="25" height="20" alt="English"> EN</a>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
 <!-- Page content -->
 <div class="container mt-5">
   <!-- Project Section -->
   <div id="projects">
     <h3>Proyectos</h3>
   </div>
-  <Card></Card>
+  <div id="cardContainer">
+    {
+      Cards_dynamic_content.map((data) => <Card alt={data.alt} card_title={data.card_title} url={data.url}></Card>)
+    }
+  </div>
   <!-- About Section -->
   <div>
     <h3>Sobre nosotros</h3>
@@ -48,29 +42,4 @@ import header_IDEL from '../images/headers-img/IDEL-header-img.png';
   </div>
 <!-- End page content -->
 </div>
-<!-- Footer -->
-<footer class="container-fluid bg-light">
-  <!-- Contact Section -->
-  <div class="container row">
-    <div id="contact" class="col-10 d-flex flex-column justify-content-center">
-      <h3>Contacto</h3>
-      <p>Ponte en contacto con nosotros sobre cualquier problema.</p>
-      <form action="/" target="_blank">
-        <input type="text" placeholder="Nombre" required name="Name">
-        <input type="text" placeholder="Email" required name="Email">
-        <input type="text" placeholder="Asunto" required name="Subject">
-        <input type="text" placeholder="Comentario" required name="Comment">
-        <button type="submit">
-          <i></i> Enviar
-        </button>
-      </form>
-    </div>
-    <div class="col-2 d-flex flex-column justify-content-center">
-      <h3>Placeholder</h3>
-      <div>
-        <p>Caca placeholder</p>
-      </div>
-    </div>
-  </div>
-</footer>
 </Layout>
